@@ -8,6 +8,8 @@ namespace Lets_Speak
         {
             Database.Load();
             var dictionary = new Dictionary();
+            Dictionary.dicionario = Database.Load();
+
             ConfiguraPrompt();
             Console.Title = "Let's Speak";
 

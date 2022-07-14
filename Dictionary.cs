@@ -30,13 +30,28 @@ namespace Lets_Speak
             var save = Prompt.Confirm("Deseja Salvar?");
             if (!save)
                 return;
-            Console.WriteLine("Saving");
-            Thread.Sleep(2000);
+            bool exists = false;
+            foreach (var word in dicionario)
+            {
+                if (word.Key.ToLower() == term.ToLower())
+                {
+                    exists = true;
+                }
+            }
+            if (!exists)
+            {
+                Console.WriteLine("Saving");
+                Thread.Sleep(2000);
+                dicionario.Add(term, definition);
+                Database.Save(dicionario);
+                Console.WriteLine("Saved");
+            }
+            else
+                Console.WriteLine("This term already exists in the dictionary");
 
-            dicionario.Add(term, definition);
-            Database.Save(dicionario);
+            
 
-            Console.WriteLine("Saved");
+            
         }
         
         
@@ -52,16 +67,14 @@ namespace Lets_Speak
             {
                 if(word.Key.Contains(searchedTerm, StringComparison.InvariantCultureIgnoreCase))
                 {
-                    Console.WriteLine($"{word.Key} : {word.Value}");
+                     Console.WriteLine($"{word.Key} : {word.Value}");
                     found = true;
                 }
                 
             }
             if (!found)
                 Console.WriteLine("No matches found");
-
-
-        }
+         }
 
 
         
