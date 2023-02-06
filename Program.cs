@@ -14,7 +14,6 @@ namespace Lets_Speak
             Console.Title = "Let's Speak";
 
             var menu = new CreateMenu("Let's Speak - English School");
-            //var teste = new Dictionary();
 
             var ListTerm = new CreateMenu("List terms", Dictionary.SearchTerm);
             var RegisterTerm = new CreateMenu("Save new terms", Dictionary.RegisterTerm);

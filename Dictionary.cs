@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BetterConsoleTables;
-using Sharprompt;
-using System.ComponentModel.DataAnnotations;
+﻿using Sharprompt;
 
 namespace Lets_Speak
 {
     public class Dictionary
     {
-        
+
         public static string term { get; set; }
 
         public static string definition { get; set; }
@@ -30,6 +23,7 @@ namespace Lets_Speak
             var save = Prompt.Confirm("Deseja Salvar?");
             if (!save)
                 return;
+
             bool exists = false;
             foreach (var word in dicionario)
             {
@@ -49,12 +43,7 @@ namespace Lets_Speak
             else
                 Console.WriteLine("This term already exists in the dictionary");
 
-            
-
-            
         }
-        
-        
 
         public static void SearchTerm()
         {
@@ -63,28 +52,23 @@ namespace Lets_Speak
 
             var searchedTerm = Console.ReadLine();
             bool found = false;
-            foreach (var word in dicionario)
+            foreach (var word in from word in dicionario
+                                 where word.Key.Contains(searchedTerm, StringComparison.InvariantCultureIgnoreCase)
+                                 select word)
             {
-                if(word.Key.Contains(searchedTerm, StringComparison.InvariantCultureIgnoreCase))
-                {
-                     Console.WriteLine($"{word.Key} : {word.Value}");
-                    found = true;
-                }
-                
+                Console.WriteLine($"{word.Key}: {word.Value}");
+                found = true;
             }
+
             if (!found)
                 Console.WriteLine("No matches found");
-         }
+        }
 
-
-        
         public override string ToString()
         {
             return term;
         }
 
-       
 
-        
     }
 }

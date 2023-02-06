@@ -14,19 +14,27 @@
       "CsvHelper/28.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/CsvHelper.dll": {}
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/CsvHelper.dll": {}
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Sharprompt/2.4.3": {
@@ -49,10 +57,14 @@
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -244,11 +256,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\Lets_Speak\\Lets_Speak\\Lets_Speak.csproj",
+      "projectUniqueName": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\LetsCode\\Lets_Speak\\Lets_Speak\\Lets_Speak.csproj",
       "projectName": "Lets_Speak",
-      "projectPath": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\Lets_Speak\\Lets_Speak\\Lets_Speak.csproj",
+      "projectPath": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\LetsCode\\Lets_Speak\\Lets_Speak\\Lets_Speak.csproj",
       "packagesPath": "C:\\Users\\Bea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\Lets_Speak\\Lets_Speak\\obj\\",
+      "outputPath": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\LetsCode\\Lets_Speak\\Lets_Speak\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bea\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -300,7 +312,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -309,7 +322,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

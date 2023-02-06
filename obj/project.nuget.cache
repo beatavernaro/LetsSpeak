@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xY/+RbAIb8DYTMsF6pBzFd/RkqP5k0CZLmTDBd3CrBzpcDcBNqiZdZvNipN5wEwrl010QS0CyjC3UIUHS4EF/A==",
+  "dgSpecHash": "HIEbWWjPBVnnr3Cnq7+CK8spqlRQ7tQrRK0aJkVWpXJAaAfDYol8rtwSldf1/W4JoAZIN8TpsDMLL+KLmydCYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\Lets_Speak\\Lets_Speak\\Lets_Speak.csproj",
+  "projectFilePath": "C:\\Users\\Bea\\Documents\\Codigos\\BackEnd\\LetsCode\\Lets_Speak\\Lets_Speak\\Lets_Speak.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bea\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
     "C:\\Users\\Bea\\.nuget\\packages\\csvhelper\\28.0.0\\csvhelper.28.0.0.nupkg.sha512",

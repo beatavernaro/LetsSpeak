@@ -14,7 +14,7 @@ namespace Lets_Speak
 
     public static class Database
     {
-        private static readonly string filePath = AppDomain.CurrentDomain.BaseDirectory;
+       private static readonly string filePath = AppDomain.CurrentDomain.BaseDirectory;
        private static readonly string fileName = "dictionary.json";
 
 
@@ -28,8 +28,6 @@ namespace Lets_Speak
 
         public static Dictionary<string, string> Load()
         {
-
-
             var path = Path.Combine(filePath, fileName);
 
             if (!File.Exists(path))
